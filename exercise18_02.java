@@ -12,15 +12,12 @@ import java.util.Scanner;
  * Write a recursive method to find the GCD.
  * Prompt the user to enter two integers and display their GCD.
  * 
- * @author Your Name
+ * @author Clarence Bunting
  */
-public class Exercise18_02 {
+public class exercise18_02 {
     
     /**
      * Recursive GCD method using Euclidean algorithm
-     * 
-     * TODO: Implement this method
-     * 
      * Base case: if n is 0, return m
      * Recursive case: return gcd(n, m % n)
      * 
@@ -29,13 +26,13 @@ public class Exercise18_02 {
      * @return greatest common divisor of m and n
      */
     public static int gcd(int m, int n) {
-        // TODO: Implement base case
+        //Implement base case
+        if (m % n == 0){
+            return n;
+        }
         
-        
-        // TODO: Implement recursive case
-        
-        
-        return 0; // Remove this when you implement the method
+        //Implement recursive case
+        return gcd(n,m%n);
     }
     
     public static void main(String[] args) {
